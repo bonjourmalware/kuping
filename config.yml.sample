@@ -17,3 +17,4 @@ HTTPS:
     - not 127.0.0.1
 
 MaxPOSTDataSize: "1kb"
+ServerHeader: "Apache"

@@ -30,6 +30,7 @@ type Config struct {
 	MaxPOSTDataSizeRaw string       `yaml:"MaxPOSTDataSize"`
 	EnableBlacklist    bool         `yaml:"EnableBlacklist"`
 	EnableWhitelist    bool         `yaml:"EnableWhitelist"`
+	ServerHeader       string       `yaml:"ServerHeader"`
 
 	// Not parsed from config file
 	MaxPOSTDataSize uint64
@@ -54,6 +55,10 @@ func (cfg *Config) Load() {
 		fmt.Printf("Failed to parse the MaxPOSTDataSize value (%s)\n", cfg.MaxPOSTDataSizeRaw)
 		fmt.Println(err)
 		os.Exit(1)
+	}
+
+	if cfg.ServerHeader == "" {
+		cfg.ServerHeader = "Apache"
 	}
 
 	cfg.MaxPOSTDataSize = byteSize.Bytes()
