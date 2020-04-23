@@ -1,0 +1,19 @@
+---
+Logfile: "kuping.ndjson"
+HTTP:
+  enabled: true
+  # Multiple ports should not be used unless very specific cases
+  # You should use iptables to redirect all ports to this one instead
+  ports:
+    - 8080
+  hosts:
+    - not 127.0.0.1
+
+HTTPS:
+  enabled: false
+  ports:
+    - 4443
+  hosts:
+    - not 127.0.0.1
+
+MaxPOSTDataSize: "1kb"

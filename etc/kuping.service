@@ -1,0 +1,12 @@
+[Unit]
+Description=Passive HTTP/HTTPS logging sensor
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/kuping
+ExecStart=/opt/kuping/kuping
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
