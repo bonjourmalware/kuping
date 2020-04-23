@@ -5,7 +5,7 @@ install:
 	go build -ldflags="-s -w" -o kuping
 	mkdir /opt/kuping
 	ln -rs ./kuping /opt/kuping/
-	cp ./config.sample.yml /opt/kuping/config.yml
+	cp ./config.yml.sample /opt/kuping/config.yml
 	echo "Don't forget to update /opt/kuping/config.yml"
 
 supervisor:
@@ -16,3 +16,4 @@ supervisor:
 enable:
 	sudo ln -rs ./etc/kuping.service /etc/systemd/system/kuping.service
 	sudo systemctl daemon-reload && sudo systemctl enable kuping
+	sudo systemctl status kuping
