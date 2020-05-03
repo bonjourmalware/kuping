@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"gitlab.com/Alvoras/kuping/internal/filter"
-	"gitlab.com/Alvoras/kuping/internal/logger"
+	"github.com/bonjourmalware/kuping/internal/filter"
+	"github.com/bonjourmalware/kuping/internal/logger"
 	"os"
 
-	"gitlab.com/Alvoras/kuping/internal/config"
-	"gitlab.com/Alvoras/kuping/internal/router"
+	"github.com/bonjourmalware/kuping/internal/config"
+	"github.com/bonjourmalware/kuping/internal/router"
 )
 
 func init() {

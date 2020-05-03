@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/c2h5oh/datasize"
-	"gitlab.com/Alvoras/kuping/internal/config"
+	"github.com/bonjourmalware/kuping/internal/config"
 	"io"
 	"io/ioutil"
 	"net/http"

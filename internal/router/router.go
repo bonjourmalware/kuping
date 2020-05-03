@@ -3,7 +3,7 @@ package router
 import (
 	"crypto/tls"
 	"fmt"
-	"gitlab.com/Alvoras/kuping/internal/config"
+	"github.com/bonjourmalware/kuping/internal/config"
 	"net/http"
 )
 

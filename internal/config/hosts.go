@@ -3,7 +3,7 @@ package config
 import (
 	"bytes"
 	"fmt"
-	"gitlab.com/Alvoras/kuping/internal/iputils"
+	"github.com/bonjourmalware/kuping/internal/iputils"
 	"net"
 	"os"
 	"strings"

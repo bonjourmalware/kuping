@@ -2,7 +2,7 @@ package logger
 
 import (
 	"fmt"
-	"gitlab.com/Alvoras/kuping/internal/router"
+	"github.com/bonjourmalware/kuping/internal/router"
 	"os"
 )
 

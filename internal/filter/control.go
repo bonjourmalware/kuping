@@ -1,8 +1,8 @@
 package filter
 
 import (
-	"gitlab.com/Alvoras/kuping/internal/config"
-	"gitlab.com/Alvoras/kuping/internal/router"
+	"github.com/bonjourmalware/kuping/internal/config"
+	"github.com/bonjourmalware/kuping/internal/router"
 )
 
 func Start(loggerChan chan router.Event, eventChan chan router.Event) {

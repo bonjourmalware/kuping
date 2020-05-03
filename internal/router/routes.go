@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"gitlab.com/Alvoras/kuping/internal/config"
+	"github.com/bonjourmalware/kuping/internal/config"
 )
 
 func Index(w http.ResponseWriter, _ *http.Request) {
